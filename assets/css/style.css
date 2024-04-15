@@ -1,0 +1,70 @@
+
+body {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    background-color: #E9F1FA;
+}
+
+
+header {
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header img {
+    height: 40px; /* Atur ukuran logo */
+    margin-left: 10px; /* Jarak kiri */
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+}
+header a:hover {
+    background-color: #0C1C62;
+    padding: 10px;
+    color: white;
+}
+section {
+    padding: 100px;
+    text-align: left;
+    margin-left: 100px; /* Menengahkan section */
+    max-width: 1000px; /* Lebar maksimum section */
+    font-size: 24px;
+    display: flex; /* Menjadikan section dan gambar dalam satu baris */
+    p{
+        font-size: 20px;
+    }
+}
+section img {
+
+    height: 450px; /* Atur ukuran logo */
+    margin-right: 0px; /* Jarak antara gambar dan teks */
+  
+}
+section button {
+    font-family: Poppins;
+    font-size: 18px; /* Ukuran font tombol */
+    color: #000000;
+}
+section button:hover {
+    background-color: #0C1C62; /* Ubah warna background tombol saat hover */
+    color: white; /* Ubah warna teks tombol saat hover */
+}
+.right-buttons {
+    display: flex;
+    align-items: center;
+}
+.right-buttons a {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 20px;
+    
+}
