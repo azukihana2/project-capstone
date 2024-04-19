@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
-  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="stylesheet" href="../assets/css/dashboard.css">
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -23,8 +23,8 @@
                   </div>
 
                     <ul class="menu">
-                        <li class="active"><a href="#dashboard">Dashboard</a></li>
-                        <li><a href="#buat">Buat</a></li>
+                        <li class="active"><a href="<?php echo base_url('dashboard/dashboard'); ?>">Dashboard</a></li>
+                        <li><a href="<?php echo base_url('sertifikat/generate_sertifikat'); ?>">Buat</a></li>
                         <li><a href="#tutorial">Tutorial</a></li>
                         <i class="fa-solid fa-user"></i>
                     </ul>
