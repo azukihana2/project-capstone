@@ -14,18 +14,25 @@
     />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Logo</h1>
-      <nav>
-        <ul>
-          <li class="active"><a href="#">Dashboard</a></li>
-          <li><a href="#">Buat</a></li>
-          <li><a href="#">Tutorial</a></li>
-          <i class="fa-solid fa-user"></i>
-        </ul>
-      </nav>
+  <header>
+        <div class="navbar">
+            <div class="container">
+                <div class="box-navbar">
+                  <div class="logo">
+                      <img src="logo.png" alt="Logo">
+                  </div>
+
+                    <ul class="menu">
+                        <li class="active"><a href="#dashboard">Dashboard</a></li>
+                        <li><a href="#buat">Buat</a></li>
+                        <li><a href="#tutorial">Tutorial</a></li>
+                        <i class="fa-solid fa-user"></i>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
+    <section>
     <main>
       <div class="card">
         <a href="#">
@@ -46,6 +53,7 @@
         </a>
       </div>
     </main>
+    </section>
     <footer>
       
     </footer>
