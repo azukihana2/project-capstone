@@ -3,8 +3,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class GenerateSertifikat extends CI_Controller {
     
+    public function __construct() {
+        parent::__construct();
+        // Load database library
+        $this->load->database();
+    }
+
     public function index() {
-        $this->load->view('sertifikat/generate_sertifikat.php');
+        $this->load->view('sertifikat/generate_sertifikat');
     }
 
     public function submit_form() {
@@ -18,16 +24,22 @@ class GenerateSertifikat extends CI_Controller {
             $assigned_date = $this->input->post('assigned_date');
             $email = $this->input->post('email');
 
-            // Lakukan apa pun yang perlu dilakukan dengan data ini, seperti menyimpan ke database atau mengirim email
+            // Simpan data ke dalam database
+            $data = array(
+                'first_name' => $first_name,
+                'last_name' => $last_name,
+                'organization' => $organization,
+                'certificate_for' => $certificate_for,
+                'assigned_date' => $assigned_date,
+                'email' => $email
+            );
+            $this->db->insert('sertifikat', $data);
 
-            // Contoh: Menampilkan data yang diterima
-            echo "<h2>Data yang Anda masukkan:</h2>";
-            echo "<p>First Name: $first_name</p>";
-            echo "<p>Last Name: $last_name</p>";
-            echo "<p>Organization: $organization</p>";
-            echo "<p>Certificate For: $certificate_for</p>";
-            echo "<p>Assigned Date: $assigned_date</p>";
-            echo "<p>Email: $email</p>";
+            // Set pesan sukses
+            $data['success_message'] = 'Formulir telah berhasil dikirim!';
+
+            // Muat kembali tampilan
+            $this->load->view('sertifikat/generate_sertifikat', $data);
         }
     }
 }
