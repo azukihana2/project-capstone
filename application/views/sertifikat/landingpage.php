@@ -13,7 +13,7 @@
         <img src="path/to/your/logo.png" alt="Logo">
         <div class="right-buttons">
             <a href="#">Home</a>
-            <a href="#">Buat</a>
+            <a href="<?php echo base_url('sertifikat/generate_sertifikat'); ?>">Buat</a>
             <a href="#">Tutorial</a>
             <a href="<?php echo base_url('auth') ?>">Log In</a>
             <a href="<?php echo base_url('auth/registration') ?>">Sign In</a>
