@@ -32,7 +32,7 @@
                         <h1>Logo</h1>
                     </div>
                     <ul class="menu">
-                        <li><a href="#dashboard">Dashboard</a></li>
+                        <li><a href="<?php echo base_url('user'); ?>">Dashboard</a></li>
                         <li class="active"><a href="#buat">Buat</a></li>
                         <li><a href="#tutorial">Tutorial</a></li>
                         <i class="fa-solid fa-user"></i>
