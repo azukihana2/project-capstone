@@ -11,7 +11,10 @@
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
-    />
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />        
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
@@ -19,9 +22,8 @@
             <div class="container">
                 <div class="box-navbar">
                   <div class="logo">
-                      <img src="logo.png" alt="Logo">
+                    <h1>Logo</h1>
                   </div>
-
                     <ul class="menu">
                         <li class="active"><a href="<?php echo base_url('dashboard/dashboard'); ?>">Dashboard</a></li>
                         <li><a href="<?php echo base_url('sertifikat/generate_sertifikat'); ?>">Buat</a></li>
@@ -33,26 +35,26 @@
         </div>
     </header>
     <section>
-    <main>
-      <div class="card">
-        <a href="#">
-          <span>+</span>
+      <main>
+        <a class="cards" href="#">
+          <div class="card">
+            <span>+</span>
+          </div>
           <p>Mulai Dari Awal</p>
         </a>
-      </div>
-      <div class="card active">
-        <a href="#">
-          <span>&#128452;</span>
+        <a class="cards" href="#">
+          <div class="card active">
+            <span>&#128452;</span>
+          </div>
           <p>Sertifikat Eiji</p>
         </a>
-      </div>
-      <div class="card">
-        <a href="#">
-          <span>&#128452;</span>
+        <a class="cards" href="#">
+          <div class="card">
+            <span>&#128452;</span>
+          </div>
           <p>Sertifikat Rohman</p>
         </a>
-      </div>
-    </main>
+      </main>
     </section>
     <footer>
       
