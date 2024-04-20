@@ -13,6 +13,7 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
     />
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
 
     <!-- Font Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />        
@@ -32,10 +33,10 @@
                         <h1>Logo</h1>
                     </div>
                     <ul class="menu">
-                        <li><a href="<?php echo base_url('user'); ?>">Dashboard</a></li>
-                        <li class="active"><a href="#buat">Buat</a></li>
+                        <li><a href="<?php echo base_url('dashboard/dashboard'); ?>">Dashboard</a></li>
+                        <li class="active"><a href="<?php echo base_url('sertifikat/generate_sertifikat'); ?>">Buat</a></li>
                         <li><a href="#tutorial">Tutorial</a></li>
-                        <i class="fa-solid fa-user"></i>
+                        <a href="#"><i class="gg-profile"></i></a>
                     </ul>
                 </div>
             </div>
@@ -45,6 +46,10 @@
     <section>
         <div class="form-inner">
             <h1 class="title">Generate Sertifikat</h1>
+            <!-- Tampilkan pesan sukses jika ada -->
+            <?php if(isset($success_message)) : ?>
+                <div class="success-message"><?php echo $success_message; ?></div>
+            <?php endif; ?>
             <form action="<?= site_url('generate_sertifikat/submit_form') ?>" method="post">
                 <div class="user-info">
                     <div class="input-box">
